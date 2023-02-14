@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TF JS example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="title">TensorflowJS client side prediction</h1>
+    <h2 class="title">When you first time press predict it will take more time, for model to load</h2>
+    <main class="file-form">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12"><div class="progress progress-bar progress-bar-stripe progress-bar-animated mb-2">
+                    Loading Model
+                </div></div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <input type="file" id="image-selector" class="form-control border-0">
+                </div>
+                <div class="col-6">
+                    <button id="predict-button" class="btn btn-dark float-right">
+                        Predict
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h2 class="ml-3">
+                        Predictions
+                    </h2>
+                    <ol id="prediction-list"></ol>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="ml-3">Image</h2>
+                    <img src="" alt="" id="selected-image" class="ml-3">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="./imagenet_classes.js"></script>
+    <script src="./predict.js"></script>
+</body>
+
+</html>
