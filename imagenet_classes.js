@@ -1021,5 +1021,3 @@ const IMAGENET_CLASSES = {
     998: 'ear, spike, capitulum',
     999: 'toilet tissue, toilet paper, bathroom tissue'
   };
-
-  export default IMAGENET_CLASSES

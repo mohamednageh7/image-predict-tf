@@ -8,6 +8,6 @@ app.use(function(req,res,next){
 
 app.use(express.static("../static"))
 
-app.listen(81,function(){
-    console.log('server running on port 81')
+app.listen(3000,function(){
+    console.log('server running on port 3000')
 })
